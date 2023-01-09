@@ -1,0 +1,68 @@
+.slider .collection-card {
+  padding: 16px;
+}
+
+.slider .collection-card .collection {
+  overflow: hidden;
+  border-radius: 65px;
+  border: 6px solid #373434;
+  box-shadow: 4.09722px 6.55556px 0px #373434;
+  height: auto;
+  width: 100%;
+  max-height: 495px;
+  overflow: hidden;
+  border-radius: 65px;
+  border: 6px solid #373434;
+  box-shadow: 4.09722px 6.55556px 0px #373434;
+  position: relative;
+  margin-bottom: 27px;
+}
+.slider .collection-card .collection__text {
+  padding: 15px;
+  font-family: "Mazzard", sans-serif;
+  font-weight: 600;
+  font-size: 37.84px;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.collection__wrapper.mobile .collection__text {
+  padding: 0 10px;
+  text-align: left;
+  font-size: 20px;
+}
+.slider .slick-slide {
+  width: 200px;
+}
+.test {
+  display: none;
+}
+.collection__wrapper {
+  background: rgba(0, 0, 0, 0.59);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.slider .collection-card:hover .collection__wrapper {
+  opacity: 1;
+}
+@media screen and (max-width: 565px) {
+  .slider .collection-card .collection__wrapper {
+    display: none;
+  }
+  .slider .collection-card .collection__wrapper.mobile {
+    display: flex;
+  }
+}
